@@ -1,0 +1,55 @@
+<div class="product-slider">
+  {% for product in collections.all.products %}
+    <div class="product-item">
+      <div class="product-image">
+        <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title }}">
+      </div>
+      <h3>{{ product.title }}</h3>
+      <div class="product-variants">
+        {% for variant in product.variants %}
+          <label>
+            <input type="radio" name="variant-{{ product.id }}" value="{{ variant.id }}">
+            {{ variant.title }}
+          </label>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+.product-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-item {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.product-image img {
+  max-width: 100%;
+}
+
+.product-variants {
+  margin-top: 10px;
+}
+
+</style>
+
+
+
+<script>
+  $(document).ready(function() {
+    $('.product-slider').slick({
+      infinite: true,
+      slidesToShow: 3, // Adjust this value to control the number of visible products at a time
+      slidesToScroll: 1,
+      dots: true,
+      prevArrow: '<button class="slick-prev">Previous</button>',
+      nextArrow: '<button class="slick-next">Next</button>',
+    });
+  });
+</script>
