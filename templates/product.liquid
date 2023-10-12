@@ -31,18 +31,18 @@
 						<div><img src="{{ image.src | img_url: 'master' }}" alt="{{ image.alt | escape }}" /></div>
 				  	{% endfor %} 
 				</div>
-				<div class="slider slider-nav flex flex-col">
-				  <div>
+				<div class="slider slider-nav flex flex-col bg-yellow-400">
+				  <div class="bg-red-100">
 					<h3>1</h3>
 					<h3>2</h3>
 					<h3>3</h3>
 					<h3>4</h3>
 					<h3>5</h3>
-				 </div>
+				  </div>
 				  
 				  
 				  {% for image in product.images %}
-					<div class=""><img src="{{ image.src | img_url: 'master' }} data-slide={{- product.id -}}" alt="{{ image.alt | escape }}" /></div>
+					<div class="bg-green-200"><img src="{{ image.src | img_url: 'master' }} data-slide={{- product.id -}}" alt="{{ image.alt | escape }}" /></div>
 				  {% endfor %} 
 
 
