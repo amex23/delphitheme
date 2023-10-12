@@ -35,7 +35,7 @@
 </head>
 <body>
 
-  {% comment %} {% render 'header' %} {% endcomment %}
+  {% render 'header' %}
 
   	
   	{% comment %} {% if template == 'index' or page.handle contains '6-reasons' %}
@@ -58,7 +58,7 @@
     {{ content_for_layout }}
   </main>
 
-  {% render 'footer' %}
+  {% render 'header' %}
 
   <!-- test -->
 
