@@ -14,13 +14,10 @@
           </div>
         {% endfor %}
 
-		{% for variant in product.variants %}
-			<label>
-			  <input type="radio" name="variant-{{ product.id }}" value="{{ variant.id }}">
-			  {{ variant.title }}
-			  <img src="{{ variant.featured_image | product_img_url: 'medium' }}" alt="{{ variant.title }}" class="variant-image">
-			</label>
-		  {% endfor %}
+		{% for image in product.images %}
+			<img src="{{ image.src | product_img_url: 'medium' }}" alt="{{ product.title }} - {{ image.alt }}" />
+	  	{% endfor %}
+		
       </div>
     </div>
   </div>
