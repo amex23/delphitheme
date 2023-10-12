@@ -73,15 +73,6 @@
 </section>
 
 
-{% if product.images.size < 3 %}
-	<style>
-		.slick-dots {
-			display: none !important;
-		}
-	</style>
-  {% else %}
-  	
-{% endif %}
 
 
 <script>
@@ -112,17 +103,9 @@ $('.slider-for').slick({
 
 <style>
 
-/* .slider ul li button::before {
-    content: "";
-    width: 11px;
-    height: 11px;
-    position: absolute;
-    right: 25px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: black;
-    border-radius: 50%;
-} */
+		.slick-dots {
+			display: none !important;
+		}
 
 	.slick-slider {
 		position: relative;
