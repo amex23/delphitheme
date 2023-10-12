@@ -73,6 +73,17 @@
 </section>
 
 
+{% if product.images.size < 3 %}
+	<style>
+		.slick-dots {
+			display: none !important;
+		}
+	</style>
+  {% else %}
+  	
+{% endif %}
+
+
 <script>
 
 $('.slider-for').slick({
@@ -198,6 +209,8 @@ $('.slider-for').slick({
 .slick-dots li button {
 	background: gray;
 }
+
+
 
 </style>
 
