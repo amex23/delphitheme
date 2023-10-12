@@ -32,22 +32,14 @@
 				  	{% endfor %} 
 				</div>
 				<div class="slider slider-nav flex flex-col bg-yellow-400 relative">
-					  	
-						
-					
-							
-						
 						  {% comment %} <div class="absolute top-[-20%]">
 							<div class="bg-red-600 relative">
 							</div>
 						  </div> {% endcomment %}
-			
 				  
 					  {% for image in product.images %}
 						<div class="bg-green-200 slide-menus"><img src="{{ image.src | img_url: 'master' }} data-slide={{- product.id -}}" alt="{{ image.alt | escape }}" /></div>
 					  {% endfor %} 
-
-
 				</div>
 
 				{% comment %} <div class="slider slider-nav flex flex-col">
@@ -108,6 +100,18 @@ $('.slider-for').slick({
 </script>
 
 <style>
+
+.slick-dots li button:before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: black;
+    border-radius: 50%;
+}
 
 	.slick-slider {
 		position: relative;
