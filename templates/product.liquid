@@ -32,7 +32,7 @@
 				  	{% endfor %} 
 				</div>
 				<div class="slider slider-nav relative">
-				  <div class="h-[10vh] "></div>
+				  {% comment %} <div class="h-[10vh] "></div> {% endcomment %}
 				  
 				  {% for image in product.images %}
 					<div class=""><img src="{{ image.src | img_url: 'master' }} data-slide={{- product.id -}}" alt="{{ image.alt | escape }}" /></div>
