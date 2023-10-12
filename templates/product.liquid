@@ -4,41 +4,41 @@
 
 <section class="flex items-start justify-center px-8 py-8 mt-[12vh]">
 	  	<div class="flex flex-col justify-start w-[60%]">
-			<div class="product-images">
-			    <div class="swiper-container-product-page swiper-container-{{- product.id -}}">
-			      <div class="swiper-wrapper">
-			        {% for image in product.images %}
-			          <div class="swiper-slide">
-			            <img src="{{ image.src | img_url: 'master' }}" alt="{{ image.alt | escape }}" />
-			            <div class="swiper-button-next swiper-button-next-{{- product.id -}}"></div>
-			            <div class="swiper-button-prev swiper-button-prev-{{- product.id -}}"></div>
-			          </div>
-			        {% endfor %}
-					
-			      </div>
-			    </div>
+			{% comment %} <div class="product-images">
+		    <div class="swiper-container-product-page swiper-container-{{- product.id -}}">
+		      <div class="swiper-wrapper">
+		        {% for image in product.images %}
+		          <div class="swiper-slide">
+		            <img src="{{ image.src | img_url: 'master' }}" alt="{{ image.alt | escape }}" />
+		            <div class="swiper-button-next swiper-button-next-{{- product.id -}}"></div>
+		            <div class="swiper-button-prev swiper-button-prev-{{- product.id -}}"></div>
+		          </div>
+		        {% endfor %}
+				
+		      </div>
+		    </div>
 		  	</div>
 
 		  	<div class="bg-red-400 flex">
 				{% for image in product.images %}
 					<img src="{{ image.src | product_img_url: 'medium' }}" alt="{{ product.title }} - {{ image.alt }}" />
 			  	{% endfor %}
-			</div> 
+			</div> {% endcomment %}
 
 			<div class="main">
 				<div class="slider slider-for">
-					{% for image in product.images %}
-				  		<div><img src="{{ image.src | img_url: 'master' }}" alt="{{ image.alt | escape }}" /></div>
-					{% endfor %} 	
-				  {% comment %} <div><h3>2</h3></div>
+				  <div><h3>1</h3></div>
+				  <div><h3>2</h3></div>
 				  <div><h3>3</h3></div>
 				  <div><h3>4</h3></div>
-				  <div><h3>5</h3></div> {% endcomment %}
+				  <div><h3>5</h3></div>
 				</div>
 				<div class="slider slider-nav">
-					{% for image in product.images %}
-						<div><img src="{{ image.src | img_url: 'master' }}" alt="{{ image.alt | escape }}" /></div>
-				  {% endfor %} 
+				  <div><h3>1</h3></div>
+				  <div><h3>2</h3></div>
+				  <div><h3>3</h3></div>
+				  <div><h3>4</h3></div>
+				  <div><h3>5</h3></div>
 				</div>
 				<div class="action">
 				  <a href="#" data-slide="3">go to slide 3</a>
@@ -109,7 +109,7 @@ $('.slider-for').slick({
 		position: absolute;
 		z-index: 99;
 		top: 0;
-		left: 92%;
+		left: 93%;
 	}
 
 	.slick-dots {
