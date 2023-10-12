@@ -42,11 +42,19 @@
 						<a href="#" data-slide="3"><img src="{{ image.src | img_url: 'master' }}" alt="{{ image.alt | escape }}" /></a>
 				  	{% endfor %} 
 				</div>
+
 				<div class="action">
+					{% for image in product.images %}
+				  		<a href="#" data-slide={{- product.id -}}><img src="{{ image.src | img_url: 'master' }}" alt="{{ image.alt | escape }}" /></a>
+					{% endfor %} 
+				</div>
+
+
+				{% comment %} <div class="action">
 				  <a href="#" data-slide={{- product.id -}}>go to slide 3</a>
 				  <a href="#" data-slide={{- product.id -}}>go to slide 4</a>
 				  <a href="#" data-slide={{- product.id -}}>go to slide 5</a>
-				</div>
+				</div> {% endcomment %}
 			</div>
 				
 		</div>
