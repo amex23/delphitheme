@@ -39,8 +39,7 @@
 				  <div><h3>5</h3></div> {% endcomment %}
 
 				  {% for image in product.images %}
-					<div><img src="{{ image.src | img_url: 'master' }} data-slide={{- product.id -}}" alt="{{ image.alt | escape }}" /></div>
-				
+					<div class=""><img src="{{ image.src | img_url: 'master' }} data-slide={{- product.id -}}" alt="{{ image.alt | escape }}" /></div>
 				  {% endfor %} 
 				</div>
 				{% comment %} <div class="action">
