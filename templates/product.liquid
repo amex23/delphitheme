@@ -2,8 +2,8 @@
 {% assign featured_image = current_variant.featured_image | default: product.featured_image %}
 
 
-<div class="container">
-  {% comment %} <div class="product-images">
+<div class="product-template container">
+  <div class="product-images">
     <div class="swiper-container-product-page swiper-container-{{- product.id -}}">
       <div class="swiper-wrapper">
         {% for image in product.images %}
@@ -15,11 +15,17 @@
         {% endfor %}
       </div>
     </div>
-  </div> {% endcomment %}
 
-  {% section 'slick' %}
+	{% for variant in product.variants %}
+		<label>
+		  <input type="radio" name="variant-{{ product.id }}" value="{{ variant.id }}">
+		  {{ variant.title }}
+		</label>
+	  {% endfor %}
 
-  {% comment %} <div class="product-description-container">
+  </div>
+
+  <div class="product-description-container">
     
     <div class="product-title">
       <h1>{{ product.title }}</h1>
@@ -32,7 +38,7 @@
       {% render 'add-to-cart-form' %}
     </div>
 
-  </div> {% endcomment %}
+  </div>
 </div>
 
 
