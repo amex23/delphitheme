@@ -32,15 +32,20 @@
 				  	{% endfor %} 
 				</div>
 				<div class="slider slider-nav flex flex-col bg-yellow-400 relative">
-				  <div class="absolute">
-						<div class="bg-red-600 relative">
-						</div>
-				  </div>
+					  	{% if product.images > 3 %}
+
+						{% else %}
+							<div class="absolute">
+								<div class="bg-red-600 relative">
+								</div>
+						  	</div>
+					  	{% endif %}	
 				  
+				
 				  
-				  {% for image in product.images %}
-					<div class="bg-green-200"><img src="{{ image.src | img_url: 'master' }} data-slide={{- product.id -}}" alt="{{ image.alt | escape }}" /></div>
-				  {% endfor %} 
+					  {% for image in product.images %}
+						<div class="bg-green-200"><img src="{{ image.src | img_url: 'master' }} data-slide={{- product.id -}}" alt="{{ image.alt | escape }}" /></div>
+					  {% endfor %} 
 
 
 				</div>
