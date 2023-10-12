@@ -3,7 +3,7 @@
 
 
 <div class="product-template container">
-  {% comment %} <div class="product-images">
+  <div class="product-images">
     <div class="swiper-container-product-page swiper-container-{{- product.id -}}">
       <div class="swiper-wrapper">
         {% for image in product.images %}
@@ -15,14 +15,6 @@
         {% endfor %}
       </div>
     </div>
-
-	  {% for variant in product.variants %}
-		<label>
-		  <input type="radio" name="variant-{{ product.id }}" value="{{ variant.id }}">
-		  {{ variant.title }}
-		</label>
-	  {% endfor %}
-
   </div>
 
   <div class="product-description-container">
@@ -38,9 +30,7 @@
       {% render 'add-to-cart-form' %}
     </div>
 
-  </div> {% endcomment %}
-
-  {% section 'slick' %}
+  </div>
 </div>
 
 
