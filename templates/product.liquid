@@ -36,8 +36,10 @@
 				  <div><h3>2</h3></div>
 				  <div><h3>3</h3></div>
 				  <div><h3>4</h3></div>
-				  <div><h3>5</h3></div> 
+				  <div><h3>5</h3></div> 				
+				</div>
 
+				<div class="slider slider-nav flex flex-col">
 				  {% for image in product.images %}
 					<div class=""><img src="{{ image.src | img_url: 'master' }} data-slide={{- product.id -}}" alt="{{ image.alt | escape }}" /></div>
 				  {% endfor %} 
