@@ -4,7 +4,7 @@
 
 <section class="flex items-start justify-center px-8 py-8 mt-[12vh]">
 	  	<div class="flex flex-col justify-start w-[60%]">
-			<div class="product-images">
+			{% comment %} <div class="product-images">
 			    <div class="swiper-container-product-page swiper-container-{{- product.id -}}">
 			      <div class="swiper-wrapper">
 			        {% for image in product.images %}
@@ -23,7 +23,7 @@
 				{% for image in product.images %}
 					<img src="{{ image.src | product_img_url: 'medium' }}" alt="{{ product.title }} - {{ image.alt }}" />
 			  	{% endfor %}
-			</div> 
+			</div>  {% endcomment %}
 
 			<div class="main">
 				<div class="slider slider-for">
@@ -101,13 +101,13 @@ $('.slider-for').slick({
 
 	.slick-prev {
 		position: absolute;
-		z-index: 99;
+		z-index: 99999 !important;
 		top: 0;
 	}
 
 	.slick-next {
 		position: absolute;
-		z-index: 99;
+		z-index: 99999 !important;
 		top: 0;
 		left: 92%;
 	}
