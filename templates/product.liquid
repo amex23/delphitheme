@@ -70,7 +70,7 @@
 				  <div><h3>4</h3></div>
 				  <div><h3>5</h3></div> {% endcomment %}
 				</div>
-				<div class="slider slider-nav">
+				{% comment %} <div class="slider slider-nav">
 					{% for image in product.images %}
 						<div><img src="{{ image.src | img_url: 'master' }}" alt="{{ image.alt | escape }}" /></div>
 						
@@ -82,8 +82,7 @@
 					{% for image in product.images %}
 				  		<a href="#" data-slide={{- product.id -}}><img src="{{ image.src | img_url: 'master' }}" alt="{{ image.alt | escape }}" /></a>
 					{% endfor %} 
-				</div>
-
+				</div> {% endcomment %}
 
 				{% comment %} <div class="action">
 				  <a href="#" data-slide={{- product.id -}}>go to slide 3</a>
