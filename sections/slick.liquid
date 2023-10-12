@@ -14,12 +14,14 @@
           <label>
             <input type="radio" name="variant-{{ product.id }}" value="{{ variant.id }}">
             {{ variant.title }}
+            <img src="{{ variant.featured_image | product_img_url: 'medium' }}" alt="{{ variant.title }}" class="variant-image">
           </label>
         {% endfor %}
       </div>
     </div>
   {% endfor %}
 </div>
+
 
 <style>
 .product-slider {
@@ -47,7 +49,8 @@
 
 <script>
   $(document).ready(function() {
-    $('.product-slider').slick({
+    // Initialize the Slick Slider
+    var slider = $('.product-slider').slick({
       infinite: true,
       slidesToShow: 3, // Adjust this value to control the number of visible products at a time
       slidesToScroll: 1,
@@ -55,5 +58,20 @@
       prevArrow: '<button class="slick-prev">Previous</button>',
       nextArrow: '<button class="slick-next">Next</button>',
     });
+
+    // Handle variant image click
+    $('.variant-image').click(function() {
+      var variantImageSrc = $(this).attr('src');
+      var productItem = $(this).closest('.product-item');
+      var productImage = productItem.find('.product-image img');
+
+      // Update the product image with the variant image
+      productImage.attr('src', variantImageSrc);
+
+      // Synchronize the slider to the current product
+      var productIndex = productItem.index();
+      slider.slick('slickGoTo', productIndex);
+    });
   });
 </script>
+
