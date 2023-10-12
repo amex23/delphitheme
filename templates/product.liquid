@@ -2,8 +2,8 @@
 {% assign featured_image = current_variant.featured_image | default: product.featured_image %}
 
 
-<section class="flex items-start justify-center px-8 py-8 mt-[12vh]">
-	  	<div class="flex flex-col justify-start w-[60%]">
+<section class="flex flex-col md:flex-row items-start justify-center px-8 py-8 mt-[12vh]">
+	  	<div class="flex flex-col justify-start w-full md:w-[60%]">
 			{% comment %} <div class="product-images">
 		    <div class="swiper-container-product-page swiper-container-{{- product.id -}}">
 		      <div class="swiper-wrapper">
@@ -47,7 +47,7 @@
 				
 		</div>
 
-  		<div class="flex flex-col justify-start items-center px-7 w-[40%]">
+  		<div class="flex flex-col justify-start items-center px-7 w-full md:w-[40%]">
     
 		    <div class="product-title">
 		      <h1>{{ product.title }}</h1>
