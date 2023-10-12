@@ -31,7 +31,7 @@
 						<div><img src="{{ image.src | img_url: 'master' }}" alt="{{ image.alt | escape }}" /></div>
 				  	{% endfor %} 
 				</div>
-				<div class="slider slider-nav flex flex-col ">
+				<div class="slider slider-nav">
 				  <div class="h-[10vh]"><h3>1</h3></div>
 				  
 				  {% for image in product.images %}
@@ -96,9 +96,15 @@ $('.slider-for').slick({
  });
 	
 
+
 </script>
 
 <style>
+
+			.slider-nav {
+				display: flex !important;
+				flex-direction: column !important;
+			}
 
 	.slick-slider {
 		position: relative;
