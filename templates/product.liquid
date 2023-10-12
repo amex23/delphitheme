@@ -4,7 +4,7 @@
 
 <section class="flex items-start justify-center px-8 py-8 mt-[12vh]">
 	  	<div class="flex flex-col justify-start w-[60%]">
-			{% comment %} <div class="product-images">
+			<div class="product-images">
 			    <div class="swiper-container-product-page swiper-container-{{- product.id -}}">
 			      <div class="swiper-wrapper">
 			        {% for image in product.images %}
@@ -23,7 +23,7 @@
 				{% for image in product.images %}
 					<img src="{{ image.src | product_img_url: 'medium' }}" alt="{{ product.title }} - {{ image.alt }}" />
 			  	{% endfor %}
-			</div>  {% endcomment %}
+			</div> 
 
 			<div class="main">
 				<div class="slider slider-for">
@@ -37,14 +37,13 @@
 				</div>
 				<div class="slider slider-nav">
 					{% for image in product.images %}
-						<div><img src="{{ image.src | img_url: 'master' }} data-slide={{- product.id -}}" alt="{{ image.alt | escape }}" /></div>
-					
-				  	{% endfor %} 
+						<div><img src="{{ image.src | img_url: 'master' }}" alt="{{ image.alt | escape }}" /></div>
+				  {% endfor %} 
 				</div>
 				<div class="action">
-				  <a href="#" data-slide={{- product.id -}}>go to slide 3</a>
-				  <a href="#" data-slide={{- product.id -}}>go to slide 4</a>
-				  <a href="#" data-slide={{- product.id -}}>go to slide 5</a>
+				  <a href="#" data-slide="3">go to slide 3</a>
+				  <a href="#" data-slide="4">go to slide 4</a>
+				  <a href="#" data-slide="5">go to slide 5</a>
 				</div>
 			</div>
 				
@@ -102,13 +101,13 @@ $('.slider-for').slick({
 
 	.slick-prev {
 		position: absolute;
-		z-index: 99999 !important;
+		z-index: 99;
 		top: 0;
 	}
 
 	.slick-next {
 		position: absolute;
-		z-index: 99999 !important;
+		z-index: 99;
 		top: 0;
 		left: 92%;
 	}
