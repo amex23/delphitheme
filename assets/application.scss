@@ -399,10 +399,10 @@ img, picture, svg {
 }
 
 .product-template {
-  padding-top: 25px;
+//   padding-top: 25px;
   display: grid;
   grid-template-columns: calc((100% - 25px) / 2) calc((100% - 25px) / 2);
-  justify-content: space-between;
+  justify-content: start;
   margin-bottom: 32px;
 
   @include phone {
