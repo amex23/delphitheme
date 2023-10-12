@@ -37,7 +37,7 @@
 				</div>
 				<div class="slider slider-nav">
 					{% for image in product.images %}
-						<div><img src="{{ image.src | img_url: 'master' }}" alt="{{ image.alt | escape }}" /></div>
+						<a href="#" data-slide={{- product.id -}} class="cursor-pointer"><img src="{{ image.src | img_url: 'master' }}" alt="{{ image.alt | escape }}" /></a>
 				  	{% endfor %} 
 				</div>
 				<div class="action">
