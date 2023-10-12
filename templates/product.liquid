@@ -3,7 +3,7 @@
 
 
 <div class="product-template container">
-	  	<div class="flex flex-col">
+	  	<div class="flex flex-col justify-start">
 			<div class="product-images">
 		    <div class="swiper-container-product-page swiper-container-{{- product.id -}}">
 		      <div class="swiper-wrapper">
@@ -19,7 +19,7 @@
 		    </div>
 		  	</div>
 
-		  	<div class="bg-red-400">
+		  	<div class="bg-red-400 class flex-col flex">
 				{% for image in product.images %}
 					<img src="{{ image.src | product_img_url: 'medium' }}" alt="{{ product.title }} - {{ image.alt }}" />
 			  	{% endfor %}
