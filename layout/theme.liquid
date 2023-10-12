@@ -37,22 +37,7 @@
 
   {% render 'header' %}
 
-  	
-  	{% comment %} {% if template == 'index' or page.handle contains '6-reasons' %}
-  		
-  				<link rel="stylesheet" href="{{ 'kahani.css' | asset_url  }}" media="print" onload="this.media='all'">
-  			 	<link href="https://cdn.prd.kahaniapp.com/poophoria/kahani.css" rel="stylesheet">
-        		<div id="kahani_container" data-story-url="https://cdn.prd.kahaniapp.com/poophoria/stories.json"></div>
-        		<script src="https://cdn.prd.kahaniapp.com/poophoria/kahani.js"></script>
-  
-  	
-   	{% elsif page.handle == 'kahani-test' %}
-  			
-  			 	<link href="https://cdn.prd.kahaniapp.com/poophoria/kahani.css" rel="stylesheet">
-        		<div id="kahani_container" data-story-url="https://cdn.prd.kahaniapp.com/poophoria/stories.json"></div>
-        		<script src="https://cdn.prd.kahaniapp.com/poophoria/kahani.js"></script>
-  
-  	{% endif %} {% endcomment %}
+
   
   <main class="main">
     {{ content_for_layout }}
