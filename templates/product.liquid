@@ -101,11 +101,27 @@ $('.slider-for').slick({
 
 </script>
 
+{% if product.images.size > 3 %}
+		<style>
+			.slick-dots {
+				display: none !important;
+			}
+		</style>
+
+  		{% else %}
+	  <style>
+		.slick-dots {
+			display: block !important;
+		}
+		</style>
+	
+{% endif %}
+
 <style>
 
-		.slick-dots {
-			display: none !important;
-		}
+		
+
+		
 
 	.slick-slider {
 		position: relative;
