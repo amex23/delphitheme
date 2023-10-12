@@ -25,7 +25,7 @@
 			  	{% endfor %}
 			</div> {% endcomment %}
 
-			<div class="w-[500px] flex flex-col gap-[25px]">
+			<div class="main flex flex-col gap-[25px]">
 				<div class="slider slider-for">
 					{% for image in product.images %}
 						<div><img src="{{ image.src | img_url: 'master' }}" alt="{{ image.alt | escape }}" /></div>
@@ -142,8 +142,8 @@ $('.slider-for').slick({
 	.main {
 
 	  width:500px;
-	  display:block;
-	  margin:0 auto;
+	  display:flex;
+	  justify-content: center;
 	}
 	h3 {
 	    background: #fff;
