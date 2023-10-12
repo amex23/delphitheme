@@ -34,19 +34,14 @@
 				<div class="slider slider-nav flex flex-col bg-yellow-400 relative">
 					  	
 						
-						  {% comment %} {% if product.images.size > 3 %}
-							<div class="absolute top-[-20%]">
-								<div class="bg-red-600 relative">
-								</div>
-						  	</div>
-						  {% else %}
+					
 							
-						  {% endif %} {% endcomment %}
+						
 						  {% comment %} <div class="absolute top-[-20%]">
 							<div class="bg-red-600 relative">
 							</div>
 						  </div> {% endcomment %}
-				
+			
 				  
 					  {% for image in product.images %}
 						<div class="bg-green-200"><img src="{{ image.src | img_url: 'master' }} data-slide={{- product.id -}}" alt="{{ image.alt | escape }}" /></div>
