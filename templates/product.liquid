@@ -43,11 +43,11 @@
 				  	{% endfor %} 
 				</div>
 
-				<div class="action">
+				{% comment %} <div class="action">
 					{% for image in product.images %}
 				  		<a href="#" data-slide={{- product.id -}}><img src="{{ image.src | img_url: 'master' }}" alt="{{ image.alt | escape }}" /></a>
 					{% endfor %} 
-				</div>
+				</div> {% endcomment %}
 
 
 				{% comment %} <div class="action">
