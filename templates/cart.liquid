@@ -35,10 +35,10 @@
         {% endfor %}
       </tbody>
     </table>
-    <div>
+    <div class="flex flex-col justify-center items-center gap-7px">
       <p>sub total : {{ cart.total_price | money }}</p>
-      <button type="submit" name="update">Update</button>
-      <button type="submit" name="checkout">Checkout</button>
+      <button type="submit" name="update" class="checkout-subtotal">Update</button>
+      <button type="submit" name="checkout" class="checkout-subtotal">Checkout</button>
     </div>
   </form>
 {% else %}
