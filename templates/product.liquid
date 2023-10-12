@@ -148,9 +148,9 @@ h3 {
 
 </style>
 
-
+{% comment %}
 <script>
-  new Swiper(".swiper-container-{{- product.id -}}", {
+	 new Swiper(".swiper-container-{{- product.id -}}", {
     slidesPerView: 1,
     centeredSlides: true,
     spaceBetween: 0,
@@ -167,7 +167,10 @@ h3 {
       }
     }
   })
+</script>
+{% endcomment %}
 
+<script>
   	$('.slider-for').slick({
 	   slidesToShow: 1,
 	   slidesToScroll: 1,
