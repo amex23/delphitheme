@@ -31,19 +31,21 @@
 						<div><img src="{{ image.src | img_url: 'master' }}" alt="{{ image.alt | escape }}" /></div>
 				  	{% endfor %} 
 				</div>
-				<div class="slider slider-nav flex flex-col">
-				  <div><h3>1</h3></div>
-				  <div><h3>2</h3></div>
-				  <div><h3>3</h3></div>
-				  <div><h3>4</h3></div>
-				  <div><h3>5</h3></div> 				
-				</div>
-
-				<div class="slider slider-nav flex flex-col">
+				<div class="slider slider-nav flex flex-col ">
+				  <div class="h-[10vh]"><h3>1</h3></div>
+				  
 				  {% for image in product.images %}
 					<div class=""><img src="{{ image.src | img_url: 'master' }} data-slide={{- product.id -}}" alt="{{ image.alt | escape }}" /></div>
 				  {% endfor %} 
+
+
 				</div>
+
+				{% comment %} <div class="slider slider-nav flex flex-col">
+				  {% for image in product.images %}
+					<div class=""><img src="{{ image.src | img_url: 'master' }} data-slide={{- product.id -}}" alt="{{ image.alt | escape }}" /></div>
+				  {% endfor %} 
+				</div> {% endcomment %}
 				{% comment %} <div class="action">
 				  <a href="#" data-slide="3">go to slide 3</a>
 				  <a href="#" data-slide="4">go to slide 4</a>
