@@ -44,7 +44,7 @@
 			
 				  
 					  {% for image in product.images %}
-						<div class="bg-green-200"><img src="{{ image.src | img_url: 'master' }} data-slide={{- product.id -}}" alt="{{ image.alt | escape }}" /></div>
+						<div class="bg-green-200 slide-menus"><img src="{{ image.src | img_url: 'master' }} data-slide={{- product.id -}}" alt="{{ image.alt | escape }}" /></div>
 					  {% endfor %} 
 
 
@@ -134,7 +134,7 @@ $('.slider-for').slick({
 		background-color: red;
 	}
 
-	.slick-current img {
+	.slide-menus .slick-current img {
 		border: 2px solid gray !important;
 	}
 	
