@@ -19,7 +19,7 @@
 		    </div>
 		  	</div>
 
-		  	<div class="bg-red-400 flex">
+		  	<div class="flex">
 				{% for image in product.images %}
 					<img src="{{ image.src | product_img_url: 'medium' }}" alt="{{ product.title }} - {{ image.alt }}" />
 			  	{% endfor %}
@@ -33,7 +33,7 @@
 				</div>
 				<div class="slider mt-[2vh] slider-nav flex flex-col relative">
 						  {% comment %} <div class="absolute top-[-20%]">
-							<div class="bg-red-600 relative">
+							<div class=" relative">
 							</div>
 						  </div> {% endcomment %}
 				  
