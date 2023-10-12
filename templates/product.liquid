@@ -4,8 +4,8 @@
 
 <section class="flex items-start justify-center px-8 py-8 mt-[12vh]">
 	  	<div class="flex flex-col justify-start w-[60%]">
-	 <div class="product-images">
-		    {% comment %} <div class="swiper-container-product-page swiper-container-{{- product.id -}}">
+			{% comment %} <div class="product-images">
+		    <div class="swiper-container-product-page swiper-container-{{- product.id -}}">
 		      <div class="swiper-wrapper">
 		        {% for image in product.images %}
 		          <div class="swiper-slide">
@@ -23,7 +23,7 @@
 				{% for image in product.images %}
 					<img src="{{ image.src | product_img_url: 'medium' }}" alt="{{ product.title }} - {{ image.alt }}" />
 			  	{% endfor %}
-			</div>  {% endcomment %}
+			</div> {% endcomment %}
 
 			<div class="main flex flex-col gap-[25px]">
 				<div class="slider slider-for">
