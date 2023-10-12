@@ -71,7 +71,8 @@
 $('.slider-for').slick({
    slidesToShow: 1,
    slidesToScroll: 1,
-   arrows: true,
+   prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+   nextArrow: '<button class="slide-arrow next-arrow"></button>',
    fade: true,
    asNavFor: '.slider-nav'
  });
@@ -80,7 +81,8 @@ $('.slider-for').slick({
    slidesToScroll: 1,
    asNavFor: '.slider-for',
    dots: true,
-   arrows: true,
+   prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+   nextArrow: '<button class="slide-arrow next-arrow"></button>',
    focusOnSelect: true
  });
 
@@ -164,8 +166,6 @@ $('.slider-for').slick({
 	  background:#000;
 	}
 
-
-
 	/* slider dots */
 	.slick-dots {
 	 display: flex;
@@ -173,29 +173,52 @@ $('.slider-for').slick({
 	 margin: 0;
 	 padding: 1rem 0;
 	 list-style-type: none;
-}
- .slick-dots li {
-	 margin: 0 0.25rem;
-}
- .slick-dots button {
-	 display: block;
-	 width: 10px;
-	 height: 10px;
-	 padding: 0;
-	 border: none;
-	 border-radius: 100%;
-	 text-indent: -9999px;
-}
- .slick-dots li.slick-active button {
-	 background-color: black;
-}
- 
-.slick-dots li button {
-	background: gray;
-}
+	}
+	 .slick-dots li {
+		 margin: 0 0.25rem;
+	}
+	 .slick-dots button {
+		 display: block;
+		 width: 10px;
+		 height: 10px;
+		 padding: 0;
+		 border: none;
+		 border-radius: 100%;
+		 text-indent: -9999px;
+	}
+	 .slick-dots li.slick-active button {
+		 background-color: black;
+	}
+	 
+	.slick-dots li button {
+		background: gray;
+	}
 
 
 
+	.slide-arrow{
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+}
+.prev-arrow{
+  left: -40px;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 15px solid #113463;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.next-arrow{
+  right: -40px;
+  width: 0;
+  height: 0;
+  border-right: 0 solid transparent;
+  border-left: 15px solid #113463;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
 </style>
 
 
