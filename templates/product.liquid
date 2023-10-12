@@ -32,14 +32,16 @@
 				  	{% endfor %} 
 				</div>
 				<div class="slider slider-nav flex flex-col bg-yellow-400 relative">
-					  	{% if product.images > 3 %}
+					  	
+						
+						  {% if product.images.size > 3 %}
 							<div class="absolute">
 								<div class="bg-red-600 relative">
 								</div>
 						  	</div>
-						{% else %}
+						  {% else %}
 							
-					  	{% endif %}	
+						  {% endif %}
 				  
 				
 				  
