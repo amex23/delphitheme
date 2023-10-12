@@ -13,6 +13,14 @@
             <div class="swiper-button-prev swiper-button-prev-{{- product.id -}}"></div>
           </div>
         {% endfor %}
+
+		{% for variant in product.variants %}
+			<label>
+			  <input type="radio" name="variant-{{ product.id }}" value="{{ variant.id }}">
+			  {{ variant.title }}
+			  <img src="{{ variant.featured_image | product_img_url: 'medium' }}" alt="{{ variant.title }}" class="variant-image">
+			</label>
+		  {% endfor %}
       </div>
     </div>
   </div>
