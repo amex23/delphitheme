@@ -1,11 +1,20 @@
+<<<<<<< HEAD
 {% comment %}
 <div class="product-card">
+=======
+<div class="product-card">
+
+>>>>>>> origin/2.0
   <a href="{{ product.url | within: collection }}" class="product-image-wrapper">
     <div class="swiper-container swiper-container-{{- product.id -}}">
       <div class="swiper-wrapper">
         {% for image in product.images %}
           <div class="swiper-slide">
+<<<<<<< HEAD
             <img src="{{ image.src | img_url: 'large' }}" alt="{{ image.alt | escape }}" />
+=======
+            <img src="{{ image.src | img_url: 'master' }}" alt="{{ image.alt | escape }}" />
+>>>>>>> origin/2.0
             <div class="swiper-button-next swiper-button-next-{{- product.id -}}"></div>
             <div class="swiper-button-prev swiper-button-prev-{{- product.id -}}"></div>
           </div>
@@ -30,6 +39,10 @@
   </a>
 </div>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/2.0
 <script>
   new Swiper(".swiper-container-{{- product.id -}}", {
     slidesPerView: 1,
@@ -48,6 +61,7 @@
       }
     }
   })
+<<<<<<< HEAD
 </script>
 {% endcomment %}
 
@@ -61,3 +75,6 @@
     <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
   </a>
 </div>
+=======
+</script>
+>>>>>>> origin/2.0

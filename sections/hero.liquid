@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="hero-image section">
   <img src="{{ section.settings.image | img_url: 'master' }}">
 </div>
@@ -20,3 +21,272 @@
   ]
 }
 {% endschema %}
+=======
+<link href="https://gatewayx.github.io/kahani-module/kahani.css" rel="stylesheet">
+<div id="kahani_container" data-story-url="https://cdn.prd.kahaniapp.com/duradry/stories_test.json"></div>
+<script src="https://gatewayx.github.io/kahani-module/kahani.js"></script>
+
+<div class="hero-image section">
+    <img src="{{ section.settings.image | img_url: 'master' }}">
+</div>
+  
+
+		
+<style>
+
+  
+  .kahani-thumbnail {
+    border: 2px solid rgb(240, 40, 73);
+  }
+  
+  .kahani-thumbnail img {
+    border: 0px solid #fff;
+  }
+  
+  .kahani-thumbnail {
+    background: none;
+  }
+  
+  .kahani-container-overlay {
+    z-index: 999999;
+  } 
+  
+  .kahani-thumbnail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 107px;
+   }
+  
+  .kahani-module-container {
+  	z-index: 10;
+  }
+  
+  .kahani-thumbnail-label {
+  	color: #0b0b0b;
+    font-family: Albra Text;
+    font-weight: bold;
+    font-size: calc(12.7px + (14 - 12.7) * ((100vw - 300px) / (1600 - 300)));
+    text-align: center;
+    width: 100%;
+    line-height: 17px;
+  
+  }
+  
+  
+  header#header, div#mobile-header {
+    	z-index: 0 !important;
+  }
+
+  #template-page-landing-page-kahani2 {
+    	z-index: 0 !important;
+  }
+  
+  .kl-private-quill-wrapper-Lkqws1.kl-private-quill-wrapper-Lkqws1.kl-private-quill-wrapper-Lkqws1 .ql-font-albratextsemi {
+    	z-index: 10 !important;
+  }
+  
+  
+  /*OVERLAY*/
+
+  .kahani-cta-button-container button {
+	background-color: #f02849;
+  }
+  
+  .kahani-photo-animated-overlay1 {
+    background-color: #eee9df;
+    font-family: Maax Mono;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .kahani-photo-animated-overlay2 {
+    background-color: #f1f1f1;
+    font-family: Maax Mono;
+    color: black;
+    font-weight: bold;
+   }
+  
+  .kahani-story-title-image {
+  	border: 2px solid rgb(240, 40, 73);
+    padding: 2px;
+    background-color: white;
+  }
+  
+  .hide {
+    display: none !important;
+    opacity: 0 !important;
+  }
+  
+  
+  #kahani_container.fixed {
+    position: fixed;
+    top: 0px;
+    background: #fff;
+    z-index: 88888;
+    width: 100%;	
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0.1%, rgba(255, 255, 255, 1) 67.09%);
+    box-shadow: 1px 1px 1px rgba(0,0,0,.2), 2px 2px 2px rgba(0,0,0,.1);
+	transition: all 0.5s ease-in-out;
+   }
+  
+  @keyframes fadeInSlide {
+    0% {
+      transform: translateY(60%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  body.hide-scrollbar::-webkit-scrollbar{
+      display : none !important;
+  }
+  body.disable-scrolling {
+      position : fixed !important;
+  }
+
+  
+  
+  @media(max-width:500px) {
+
+        
+    .slick-track {
+        width: 550px !important;
+    }
+    
+    .kahani-thumbnail-container {
+    	width: 80px !important;
+    	display: flex !important;
+        margin-left: 1px !important;
+    }
+    
+    .kahani-thumbnail-label {
+    	padding-top: 5px;
+    }
+    
+    .kahani-thumbnail span {
+    	margin-left: auto !important;
+        margin-right: auto !important;
+    } 
+    
+    #template-page-landing-page-kahani2 {
+    	z-index: 0 !important;
+    }
+    
+    .kl-private-quill-wrapper-Lkqws1.kl-private-quill-wrapper-Lkqws1.kl-private-quill-wrapper-Lkqws1 .ql-font-albratextsemi {
+    	z-index: 10 !important;
+    }
+  
+  }
+  
+  
+/*   IPHONE MEDIA QUERY  */
+  @media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+      .slick-slider {
+    		display: flex !important;
+            flex-direction: row !important;
+      }   
+    }
+  
+  @media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+      .slick-slider {
+    		display: flex !important;
+            flex-direction: row !important;
+      }
+      
+   }
+ 
+</style>  
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    let oldValue = 0
+    let newValue = 0    
+  	window.addEventListener('scroll', function() {
+      var scroll = window.pageYOffset | document.body.scrollTop;
+      var sticky = document.querySelector("#kahani_container");   
+      if (scroll < 400) {
+        sticky.classList.remove('fixed');      
+      } 
+      else {
+        newValue = window.pageYOffset;
+        if (oldValue < newValue) {
+          //Down Scroll
+          sticky.classList.add('fixed');       
+        } else if (oldValue > newValue) {
+          //Up Scroll
+          sticky.classList.add('fixed');      
+          console.log("up");
+        }
+        oldValue = newValue;        
+      }     
+    });  
+
+
+    
+ 	$("#kahani_container").click(function () {
+ 		window.scrollTo({ top: 0, behavior: 'instant' });	
+ 	});
+	
+	window.KahaniModule.onOpen = function() {
+      $("#mobile-header").addClass("hide");
+      $( "iframe[title='chat widget']" ).css('display', 'none');
+      $('body').addClass('hide-scrollbar');
+      $('body').addClass('disable-scrolling');
+
+	}
+	window.KahaniModule.onClose = function() {	
+      $("#mobile-header").removeClass("hide");
+      $( "iframe[title='chat widget']" ).css('display', 'block');
+      $('body').removeClass('hide-scrollbar');
+      $('body').removeClass('disable-scrolling');
+	}
+    
+    /*swipe effect*/
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      /* the viewport is less than 768 pixels wide */
+        $('.kahani-thumbnails-flex-container').slick({
+          infinite: false, 
+          speed: 500,
+          slidesToShow: 4,
+          slidesToScroll: 3,
+          arrows : false,
+    	});
+    } 
+    
+  
+})
+
+
+
+
+  {% schema %}
+  {
+    "name": "Hero Image",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Hero Image",
+        "category": "Image"
+      }
+    ]
+  }
+  {% endschema %}
+>>>>>>> origin/2.0

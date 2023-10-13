@@ -1,14 +1,24 @@
 <div class="rich-text section">
+<<<<<<< HEAD
   <h2 class="heading center">
     {{ section.settings.title }}
   </h2>
   <div class="center padding-top">
     {{ section.settings.text }}
   </div>
+=======
+    <h2 class="heading center">
+        {{ section.settings.title }}
+    </h2>
+    <div class="center padding-top">
+        {{ section.settings.text }}
+    </div>
+>>>>>>> origin/2.0
 </div>
 
 {% schema %}
 {
+<<<<<<< HEAD
   "name": "Rich Text",
   "settings": [
     {
@@ -31,4 +41,28 @@
     }
   ]
 } 
+=======
+    "name": "Rich Text",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Section Heading"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "Description",
+            "default": "<p> Write your description here</p>"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Rich Text",
+            "category": "Text"
+        }
+    ]
+}
+>>>>>>> origin/2.0
 {% endschema %}

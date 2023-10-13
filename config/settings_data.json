@@ -1,1 +1,144 @@
+<<<<<<< HEAD
 {"current":{"sections":{"footer":{"type":"footer","settings":{"title":"Footer Description"}},"1641222068a6deb08d":{"type":"hero","settings":{"image":"shopify:\/\/shop_images\/Elegance_and_innovation.png"}},"9c931490-a2ae-405e-9981-cc4e31ce455b":{"type":"image-with-text","settings":{"title":"Image with Text","text":"<p>Write your description here<\/p>","reverse":false}}},"content_for_index":["1641222068a6deb08d","9c931490-a2ae-405e-9981-cc4e31ce455b"]},"presets":{"Default":{}}}
+=======
+{
+  "current": {
+    "sections": {
+      "16412797748099628c": {
+        "type": "hero",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Hero_Image.png"
+        }
+      },
+      "16414612506ee043d2": {
+        "type": "rich-text",
+        "settings": {
+          "title": "Section Heading",
+          "text": "<p> Write your description here<\/p>"
+        }
+      },
+      "1641462308e510e4d5": {
+        "type": "image-with-text",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Why_Shopify.png",
+          "title": "Image with text",
+          "text": "<p>Write your description here<\/p>",
+          "reverse": false
+        }
+      },
+      "1641462652b37d77bc": {
+        "type": "image-with-text",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Vuejs.png",
+          "title": "Image with text",
+          "text": "<p><strong>The perfect combination of technology, flexibility, and sophistication. Light and power. Combined.<\/strong><\/p>",
+          "reverse": true
+        }
+      },
+      "16414637692f1f26d3": {
+        "type": "logo-list",
+        "blocks": {
+          "16414637692f1f26d3-0": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/css_logo_large_6ad58e69-13ee-4ef5-92b9-9f0aeb4947c7.png",
+              "link": ""
+            }
+          },
+          "16414637692f1f26d3-1": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/shopify_glyph_large_40ec2cd4-d9a8-429b-a7b6-f9cf5b6eefbf.png",
+              "link": ""
+            }
+          },
+          "e40d37a4-d7bf-4e0a-82f8-a94afa3a1b97": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vuejs_large_de9791db-4027-428d-8f91-d02afd7f538b.png",
+              "link": ""
+            }
+          },
+          "ddc428cd-ba49-44db-9e63-7bbcd01d7126": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/js_logo_large_1008ca18-fe94-48a6-99e0-4eb38e695b54.png",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "16414637692f1f26d3-0",
+          "16414637692f1f26d3-1",
+          "e40d37a4-d7bf-4e0a-82f8-a94afa3a1b97",
+          "ddc428cd-ba49-44db-9e63-7bbcd01d7126"
+        ],
+        "settings": {
+          "title": "Logo List"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "aaddada9-c461-4a55-b50a-93e1a55360e8": {
+            "type": "social_link",
+            "settings": {
+              "title": "Facebook",
+              "link": "https:\/\/facebook.com"
+            }
+          },
+          "2e41c93e-a276-489c-903c-020d8d747b41": {
+            "type": "social_link",
+            "settings": {
+              "title": "Twitter",
+              "link": "https:\/\/twitter.com"
+            }
+          },
+          "0ea20033-39cb-44a6-abcf-ba4c7415e817": {
+            "type": "social_link",
+            "settings": {
+              "title": "Instagram",
+              "link": "https:\/\/instagram.com"
+            }
+          },
+          "02daf236-cd10-40b5-97fd-89a1a39c8432": {
+            "type": "social_link",
+            "settings": {
+              "title": "",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "aaddada9-c461-4a55-b50a-93e1a55360e8",
+          "2e41c93e-a276-489c-903c-020d8d747b41",
+          "0ea20033-39cb-44a6-abcf-ba4c7415e817",
+          "02daf236-cd10-40b5-97fd-89a1a39c8432"
+        ],
+        "settings": {
+          "title": "Footer Description"
+        }
+      },
+      "1641555181e9bf879a": {
+        "type": "hero",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Elegance_and_innovation.png"
+        }
+      }
+    },
+    "content_for_index": [
+      "16412797748099628c",
+      "16414612506ee043d2",
+      "1641462308e510e4d5",
+      "1641462652b37d77bc",
+      "16414637692f1f26d3",
+      "1641555181e9bf879a"
+    ]
+  },
+  "presets": {
+    "Default": {
+    }
+  }
+}
+>>>>>>> origin/2.0

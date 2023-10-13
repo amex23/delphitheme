@@ -1,4 +1,5 @@
 <div class="product-option-row">
+<<<<<<< HEAD
   <div class="product-option-label" @click="option.visible = !option.visible" :class="{ labelActive: option.visible }">
     ${ option.name }: <span>${ selected[i] }</span>
   </div>
@@ -15,4 +16,26 @@
       </div>
     </template>
   </div>
+=======
+
+    <div class="product-option-label" @click="option.visible = !option.visible" :class="{ labelActive: option.visible }">
+        ${ option.name }: <span>${ selected[i] }</span>
+    </div>
+
+    <div class="product-option-list" v-if="option.visible">
+        <template v-for="(value, index) in option.values">
+            <div class="product-option-item"
+                @click="
+                    selected[i] = value;
+                    option.visible = false;
+                    form.selections[i] = value;
+                "
+            >
+                ${ value }
+            </div>
+        </template>
+    </div>
+
+    
+>>>>>>> origin/2.0
 </div>
